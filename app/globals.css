@@ -487,3 +487,73 @@
 .scrollbar-hide-default::-webkit-scrollbar-thumb:hover {
   background-color: #9095A1;
 }
+
+/* Professional Dark Mode Overrides */
+body, html, .dark, :root {
+  background-color: #0D1117 !important;
+  --background: #0D1117 !important;
+  color: #c9d1d9 !important;
+}
+
+header, aside, main, footer, select, input, textarea, .border-gray-800, .border-\[\#1e222d\], .border-\[\#2a2e39\] {
+  border-color: #21262d !important;
+}
+
+/* Custom premium range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #30363d;
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fdd458;
+  cursor: pointer;
+  border: 2px solid #0d1117;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  transition: transform 0.1s;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Light Theme overrides */
+.light, .light body, .light html {
+  background-color: #f2f3f5 !important;
+  color: #131722 !important;
+  --background: #f2f3f5 !important;
+}
+
+.light header, .light aside, .light main, .light footer, .light select, .light input, .light textarea, .light table {
+  background-color: #ffffff !important;
+  border-color: #e0e3eb !important;
+  color: #131722 !important;
+}
+
+.light .border-gray-800, .light .border-\[\#2a2e39\] {
+  border-color: #e0e3eb !important;
+}
+
+.light text, .light span, .light td, .light th, .light div:not(.bg-yellow-500):not(.bg-green-500):not(.bg-red-500) {
+  color: #131722 !important;
+}
+
+.light .bg-gray-950, .light .bg-\[\#131722\], .light .bg-\[\#1c2030\]\/20 {
+  background-color: #ffffff !important;
+}
+
+.light button:not(.bg-yellow-500):not(.bg-green-500):not(.bg-red-500):not(.text-white) {
+  color: #4a505e !important;
+}
+
+.light button:not(.bg-yellow-500):not(.bg-green-500):not(.bg-red-500):hover {
+  background-color: #f0f3fa !important;
+  color: #131722 !important;
+}
